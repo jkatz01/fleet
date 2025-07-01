@@ -148,7 +148,7 @@ func QuarantineIfNeeded() {
 
 	/* Note: in production code, each rule that is added to the firewall 
 	* 		 should have persistent set to true so that it remains after
-	* 		 a system restart. For debug recoverability I have not set it. */
+	* 		 a system restart. For debug recoverability I have not set it. See line 174. */
 	
 	for _, layer := range layersIPv4 {
 		// Block all traffic except fleetServerIP
