@@ -146,9 +146,9 @@ func QuarantineIfNeeded() {
 		wf.LayerALEAuthConnectV6,
 	}*/
 
-	/* Note: in production code, each rule that is added to the firewall 
-	* 		 should have persistent set to true so that it remains after
-	* 		 a system restart. For debug recoverability I have not set it. See line 174. */
+	// Note: in production code, each rule that is added to the firewall 
+	// should have persistent set to true so that it remains after
+	// a system restart. For debug recoverability I have not set it. See line 174.
 	
 	for _, layer := range layersIPv4 {
 		// Block all traffic except fleetServerIP
@@ -212,12 +212,9 @@ func QuarantineIfNeeded() {
 	}
 
 	// TODO: production quarantine should support IPv6 fleet server connection
-	// Code for allowing the fleet IPv6 address is here
+	// Code for allowing the fleet IPv6 address is here:
 	/*
 	for _, layer := range layersIPv6 {
-		 
-		
-		
 		if foundIPv6 {
 			// Allow traffic to the fleet server in case it is an ipv6 address
 			guidAllowFleetIPv6, err := windows.GenerateGUID()
