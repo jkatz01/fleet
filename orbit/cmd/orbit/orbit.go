@@ -2179,7 +2179,7 @@ func (q *quarantineReceiver) Run(c *fleet.OrbitConfig) error {
 	}
 
 	log.Info().Msg("This host is quarantined!")
-	// TODO: add updateUrl to quarantine allow list
+	// TODO: add updateUrl to quarantine allow list for agent updates
 	QuarantineIfNeeded()
 	return nil
 }

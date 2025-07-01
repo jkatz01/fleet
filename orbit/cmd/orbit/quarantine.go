@@ -1,5 +1,5 @@
 package main
-
+// TODO: in production code quarantine.go needs to be in a separate package
 import (
 	"net"
 	"net/netip"
@@ -28,7 +28,8 @@ func setFleetUrl(fleetUrl string) {
 }
 
 func isQuarantined() bool {
-	// TODO: check in windows registry
+	// TODO: In this POC I am writing to a file to check if this host is quarantined, in production
+	// code this should be checked in a windows registry key
 	if _, err := os.Stat(".\\I_am_quarantined"); err == nil {
 		return true // File exists
 	}
