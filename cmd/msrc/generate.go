@@ -50,6 +50,7 @@ func main() {
 	eBulletins, err := ghAPI.MSRCBulletins(ctx)
 	panicif(err)
 	var bulletins []*parsed.SecurityBulletin
+	fmt.Printf("-------------------- Env var MSRC_CLEAN is:  %s    ----------", os.Getenv(cleanEnvVar))
 	if len(eBulletins) == 0 || os.Getenv(cleanEnvVar) != "false" {
 		fmt.Println("None found, backfilling...")
 		bulletins, err = backfill(now.Month(), now.Year(), msrcAPI)
