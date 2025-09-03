@@ -1,0 +1,7 @@
+{
+  "name": "BinDiff",
+  "slug": "bindiff/darwin",
+  "unique_identifier": "com.google.security.zynamics.bindiff",
+  "token": "bindiff",
+  "installer_format": "dmg"
+} 

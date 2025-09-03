@@ -23,6 +23,13 @@
       "description": ""
     },
     {
+      "name": "BinDiff",
+      "slug": "bindiff/darwin",
+      "platform": "darwin",
+      "unique_identifier": "com.google.security.zynamics.bindiff",
+      "description": ""
+    },
+    {
       "name": "Box Drive",
       "slug": "box-drive/darwin",
       "platform": "darwin",
