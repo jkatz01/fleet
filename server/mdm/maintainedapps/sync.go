@@ -29,7 +29,7 @@ type AppsList struct {
 	Apps    []appListing `json:"apps"`
 }
 
-const fmaOutputsBase = "https://raw.githubusercontent.com/fleetdm/fleet/refs/heads/main/ee/maintained-apps/outputs"
+const fmaOutputsBase = "https://raw.githubusercontent.com/jkatz01/fleet/refs/heads/30799-pkg-in-dmg/ee/maintained-apps/outputs"
 
 // Refresh fetches the latest information about maintained apps from FMA's
 // apps list on GitHub and updates the Fleet database with the new information.
